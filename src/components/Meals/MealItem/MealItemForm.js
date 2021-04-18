@@ -9,7 +9,7 @@ const MealItemForm = (props) => {
     const amountInputRef = useRef();
 
     const submitHandler = (event) => {
-        event.preventDefault();
+        event.preventDefault();//Prevent default reloading of page.
 
         const enteredAmount = amountInputRef.current.value;
         const enteredAmountNumber = +enteredAmount;
